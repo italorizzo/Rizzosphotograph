@@ -1,0 +1,5 @@
+O ponto principal da imagem precisar estar no meio
+
+Resolução: 1600px x 1200px
+
+Modo de salvar: imagem_(nº da imagem).jpg

@@ -1,0 +1,17 @@
+.imagens{
+    margin-top: -200px;
+}
+#img-slider{
+    background-image: url(../../image/imagens_home/imagem_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 26.5%;
+    padding-bottom: 26.5%;
+    transition: 1s all;
+}
+@media(max-width: 800px){
+    .imagens{
+        margin-top: 0;
+    }
+}

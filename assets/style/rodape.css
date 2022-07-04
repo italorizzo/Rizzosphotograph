@@ -1,0 +1,93 @@
+.facebook-contato{
+    display: table;
+
+    width: 100%;
+    height: auto;
+
+    text-align: center;
+}
+.facebook, .contato{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+.rede_social{
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+    transition: 0.5 all;
+}
+.rede_social img{
+    padding: 5px;
+}
+.rede_social img:hover{
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(65, 65, 65)); 
+}
+.botão-orçamento-rodape{
+    width: 200px;
+    padding: 10px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+    border: 0;
+
+    background-color: rgb(116, 116, 116);
+    color: white;
+
+    font-weight: bold;
+
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.637);
+}
+.pequeno{
+    display: none;
+}
+.copy{
+    margin-top: 20px;
+
+    width: 100%;
+
+    padding: 5px 0 5px 0;
+
+    background-color: black;
+    color: white;
+
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+}
+@media(max-width: 800px){
+    .grande{
+        margin: auto;
+    }
+    .facebook-contato div{
+        width: 100%;
+        padding: 20px 0 20px 0;
+        display: block;
+        margin: auto;
+    }
+    .botão-orçamento-rodape{
+        margin: auto;
+        width: 80%;
+    }
+    .titulo{
+        font-size: larger;
+    }
+    .texto{
+        font-size: 10pt;
+    }
+    .copy{
+        font-size: 8pt;
+    }
+    .rede_social img{
+        width: 20px;
+    }
+}
+@media(max-width: 400px){
+    .pequeno{
+        display: block;
+        margin: auto;
+    }
+    .grande{
+        display: none;
+    }
+}
