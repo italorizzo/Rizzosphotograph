@@ -4,7 +4,7 @@ currentImageIndex = 2,
 images = document.getElementById("img-slider")
 
 function nextImage() {
-    images.style.backgroundImage = `url(../../image/imagens_home/imagem_${currentImageIndex}.jpg)`
+    images.style.backgroundImage = `url(image/imagens_home/imagem_${currentImageIndex}.jpg)`
 
     currentImageIndex++
 
