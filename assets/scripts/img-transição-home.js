@@ -1,17 +1,15 @@
-let time = 5100,
-currentImageIndex = 0,
-images = document.getElementById("img-slider"),
-link_img= ['../../image/imagens_home/imagem_2.jpg', '../../image/imagens_home/imagem_3.jpg', '../../image/imagens_home/imagem_4.jpg', '../../image/imagens_home/imagem_5.jpg', '../../image/imagens_home/imagem_6.jpg', '../../image/imagens_home/imagem_1.jpg'],
-max = link_img.length
+let time = 4100,
+qnt = 6 // quantidade de arquivos na pasta de imagens_home
+currentImageIndex = 2,
+images = document.getElementById("img-slider")
 
 function nextImage() {
-    var entrar = `url(${link_img[currentImageIndex]})`
-    images.style.backgroundImage = entrar
+    images.style.backgroundImage = `url(../../image/imagens_home/imagem_${currentImageIndex}.jpg)`
 
     currentImageIndex++
 
-    if(currentImageIndex >= max){
-        currentImageIndex = 0
+    if(currentImageIndex >= qnt){
+        currentImageIndex = 1
     }
 }
 
