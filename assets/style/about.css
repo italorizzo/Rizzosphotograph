@@ -1,0 +1,90 @@
+#corpo{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.banner{
+    z-index: -1;
+    position: relative;
+    text-align: center;
+}
+.img{
+    background-image: url(../../image/banner-about/banner.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+@media(max-width: 800px){
+    .img{
+        height: 350px;
+        padding: 0;
+    }
+}
+.titulo-main h1{
+    margin-top: 20px;
+    font-size: 70px;
+}
+.titulo-main{
+    text-align: center;
+}
+.titulo-main h2{
+    font-size: 15px;
+    margin-top: -50px;
+    margin-bottom: 70px;
+}
+.texto-main{
+    text-align: justify;
+    display: block;
+    color: rgb(94, 94, 94);
+}
+.texto-main p{
+    margin-bottom: 50px;
+}
+.bt-soliciatar-sobre{
+    text-align: center;
+}
+.bt-soliciatar-sobre button{
+    margin: auto;
+    width: 250px;
+    padding: 15px;
+
+    cursor: pointer;
+
+    border-radius: 25px;
+    border: 0;
+
+    background-color: rgb(116, 116, 116);
+    color: white;
+
+    font-weight: bold;
+
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.637);
+
+    transition: 0.5s all;
+    text-transform: uppercase;
+}
+.bt-soliciatar-sobre button:hover{
+    opacity: 0.5;
+}
+
+@media(max-width: 800px){
+    .bt-soliciatar-sobre button{
+        font-size: 8pt;
+        width: 200px;
+        padding: 10px;
+    }
+    .titulo-main h1{
+        font-size: 45px;
+    }
+    .titulo-main h2{
+        font-size: 15px;
+        margin-top: -30px;
+        margin-bottom: 50px;
+    }
+    .texto-main p{
+        font-size: small;
+    }
+}
