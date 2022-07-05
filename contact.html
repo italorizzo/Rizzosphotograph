@@ -6,21 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image/rizzosphotograph_favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/style/menu.css">
-    <link rel="stylesheet" href="assets/style/img-home.css">
+    <link rel="stylesheet" href="assets/style/contact.css">
     <link rel="stylesheet" href="assets/style/rodape.css">
-    <script src="assets/scripts/img-transição-home.js" defer></script>
     <script src="assets/scripts/menu-cel.js" defer></script>
     <title>Rizzo's Photograph</title>
 </head>
 <body>
     <div id="preto"></div>
-    <header class="menu">
-        <div class="proporcao-menu logo-pagina-inicial" >
-            <a href=""><img src="image/logo/img_logo.png" style="width: 150px; padding: 36px;" alt=""></a>
+    <header class="menu menu-padrao">
+        <div class="proporcao-menu logo-padrao" >
+            <a href="index.html"><img src="image/logo/text_logo.png" alt=""></a>
         </div>
         <input type="checkbox" id="bt_menu">
         <label for="bt_menu" class="overlay-button"><img class="form_bt_menu" src="image/icon-menu.svg" alt="imagem botão menu"></label>
-        <div class="proporcao-menu abas-pagina-inicial">
+        <div class="proporcao-menu abas-padrao">
             <ul>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="">About</a></li>
@@ -29,8 +28,40 @@
         </div>
     </header>
     <main id="corpo">
-        <section class="imagens">
-            <div id="img-slider"></div>
+        <section class="banner">
+            <div class="img"></div>
+        </section>
+        <section>
+            <h1 class="titulo-main">Contact</h1>
+            <form class="formulario" action="https://formspree.io/f/xoqrejpa" method="POST">
+                <label>
+                    <input class="questão-formulario" id="nome" placeholder="Nome*" type="text" name="nome" required>
+                </label>
+                <br>
+                <label>
+                    <input class="questão-formulario" id="email" placeholder="E-mail*" type="email" name="email" required>
+                </label> 
+                <br>
+                <label>
+                    <input class="questão-formulario" id="whatsapp" type="number" required="required" maxlength="11"  name="whatsapp" placeholder="Whatsapp* DDD" />
+                </label class="questão-formulario">
+                <br>
+                <label>
+                    <select name="album" required class="questão-formulario">
+                        <option disabled selected hidden aria-required="false">Tipo de álbum*</option>
+                        <option>opção_1</option>
+                        <option>opção_2</option>
+                        <option>opção_3</option>
+                        <option>opção_4</option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    <textarea class="questão-formulario" id="msg" placeholder="Mensagem" name="mensagem"></textarea>
+                </label>
+                <br>
+                <button class="enviar-formulario" id="enviar" type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>

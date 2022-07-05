@@ -1,3 +1,6 @@
+footer{
+    border-top: 1px solid rgb(128, 128, 128, 0.596);
+}
 .facebook-contato{
     display: table;
 
@@ -37,6 +40,10 @@
     font-weight: bold;
 
     box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.637);
+    transition: 0.5s all;
+}
+.botão-orçamento-rodape:hover{
+    opacity: 0.5;
 }
 .pequeno{
     display: none;
