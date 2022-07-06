@@ -1,12 +1,20 @@
 .imagens{
     margin-top: -160px;
 }
+#img-slider img{
+    transition: 1s all;
+}
 .imagem-tela-grande{
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 1s all;
+    opacity: 0;
+}
+.select{
+    opacity: 1;
 }
 @media(min-width: 700px){
     .divisão{ /*altura do rodapé*/
@@ -30,6 +38,6 @@
         width: 100%;
         padding-top: 26.5%;
         padding-bottom: 26.5%;
-        transition: 1s all;
+        transition: 1s all
     }
 }
