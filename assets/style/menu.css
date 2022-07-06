@@ -128,9 +128,6 @@ body::-webkit-scrollbar-thumb {
         -webkit-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
     }
-    .abas-padrao a:hover{
-        font-weight: bold;
-    }
     .abas-padrao a:hover:before {
         visibility: visible;
         -webkit-transform: scaleX(1);

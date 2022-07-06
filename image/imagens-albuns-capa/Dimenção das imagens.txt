@@ -1,0 +1,3 @@
+Resoluçao da imagem: 1280px x 940px
+
+nome da imagem: (nº da imagem).jpg
