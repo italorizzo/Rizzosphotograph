@@ -169,6 +169,19 @@ body::-webkit-scrollbar-thumb {
     #bt_menu:checked ~ .abas-padrao{
         margin-right: 0px;
     }
+    .abas-pagina-inicial ul{
+        padding-top: 40px;
+    }
+    .abas-pagina-inicial li{
+        text-align: right;
+        padding: 20px 50px 20px 0;
+        list-style-type: none;
+    }
+    .abas-pagina-inicial a{
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
     .abas-pagina-inicial{
         top: 0;
         position: fixed !important;
@@ -179,6 +192,19 @@ body::-webkit-scrollbar-thumb {
         transition: 1s;
         right: 0;
         margin-right: -100%;
+    }
+    .abas-pagina-inicial ul{
+        padding-top: 40px;
+    }
+    .abas-pagina-inicial li{
+        text-align: right;
+        padding: 20px 50px 20px 0;
+        list-style-type: none;
+    }
+    .abas-pagina-inicial a{
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
     }
     .ativado{
         position: fixed;
