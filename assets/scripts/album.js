@@ -62,6 +62,7 @@ function albumPratica(){
     let voltarAlbum = document.createElement('button')
     voltarAlbum.classList.add('voltarAlbum')
     voltarAlbum.textContent = 'Voltar para os albuns'
+    document.title = `Rizzo's Photograph - Album de ${nome_album}`
 
     while(cont <= Math.min(qnt_max_imagensporalbum, qnt_imagensnoalbum)){
         var imgDentroAlbum = document.createElement('img')
