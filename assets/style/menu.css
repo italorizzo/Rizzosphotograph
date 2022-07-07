@@ -21,8 +21,6 @@ body{
 .menu-padrao{
     margin: auto;
     width: 90%;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.062);
 }
 .overlay-button {
     position: absolute;
@@ -66,37 +64,18 @@ body::-webkit-scrollbar-thumb {
     .abas-pagina-inicial li{
         position: relative;
         display: inline-block;
-        padding: 0 40px 0 40px;
+        padding: 20px 40px 20px 40px;
+        transition: 0.5s all;
     }  
     .abas-pagina-inicial a{
         text-decoration: none;
         cursor: pointer;
-        color: black;
+        color: hsl(0, 0%, 85%);
         text-transform: uppercase;
     }
-    .abas-pagina-inicial a::before {
-        content: "";
-        position: absolute;
-        width: 45%;
-        height: 4px;
-        top: 30px;
-        left: calc(50% - 22.5%);
-        background-color: hsl(0, 0%, 28%);
-        border-radius: 5px;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
-    }
-    .abas-pagina-inicial a:hover{
-        color: hsl(0, 0%, 85%);
+    .abas-pagina-inicial li:hover{
         font-weight: bold;
-    }
-    .abas-pagina-inicial a:hover:before {
-        visibility: visible;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
+        background-color: rgba(105, 105, 105, 0.199);
     }
     .abas-padrao ul{
         text-align: right;

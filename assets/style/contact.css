@@ -10,7 +10,7 @@
     text-align: center;
 }
 .img{
-    background-image: url(../../image/banner-contact/banner.png);
+    background-image: url(https://source.unsplash.com/random/1440x750/); /*Colocar depois ../../image/banner-contact/banner.png*/
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
