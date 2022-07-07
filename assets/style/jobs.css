@@ -54,3 +54,15 @@
 .description{
     font-size: small;
 }
+@media(max-width: 800px){
+    .hoverInfo {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 1px;
+        padding: 0;
+        padding-bottom: 3px;
+        cursor: pointer;
+        transition: 1s all;
+    }
+}

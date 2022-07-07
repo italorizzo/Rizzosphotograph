@@ -10,42 +10,10 @@ const img9 = document.getElementById('9')
 const img10 = document.getElementById('10')
 const img11 = document.getElementById('11')
 const img12 = document.getElementById('12')
-const corpo_album = document.getElementById('corpo-album')
-
-var albunsPossíveis = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-var sorte = []
+const body = document.querySelector('body')
 
 function albumPratica(){
-    const index = albunsPossíveis.indexOf(img);
-    if (index > -1) {
-        albunsPossíveis.splice(index, 1);
-    }
-
-    let cont2 = 0
-    while(cont2 < 3){
-        let temp = Math.floor(10* Math.random())
-        if (sorte.indexOf(temp) > -1){
-            continue
-        }else{
-            sorte.push(temp)
-            cont2++
-        }
-    }
-    let img_index = document.querySelectorAll(`.hoverInfo`)
-    let img1Index = img_index[albunsPossíveis[sorte[0]]]
-    let img2Index = img_index[albunsPossíveis[sorte[1]]]
-    let img3Index = img_index[albunsPossíveis[sorte[2]]]
-
-    
-    let veja = document.createElement('div')
-    veja.classList.add('veja')
-
-    let vejaMaisAlguns = document.createElement('h2')
-    vejaMaisAlguns.classList.add('vejaMaisAlguns')
-    vejaMaisAlguns.textContent = 'Veja mais alguns albuns'
-
-    let maisAlbuns = document.createElement('div')
-    maisAlbuns.classList.add('maisAlbuns')
+    const corpo_album = document.getElementById('corpo-album')
 
     let parallax = document.createElement('div')
     parallax.classList.add('parallax')
@@ -85,6 +53,16 @@ function albumPratica(){
     let imagensAlbum = document.createElement('div')
     imagensAlbum.classList.add('imgAlbum')
 
+    let a = document.createElement('a')
+    a.href = 'jobs.html'
+
+    let divBt = document.createElement('div')
+    divBt.classList.add('divBt')
+
+    let voltarAlbum = document.createElement('button')
+    voltarAlbum.classList.add('voltarAlbum')
+    voltarAlbum.textContent = 'Voltar para os albuns'
+
     while(cont <= Math.min(qnt_max_imagensporalbum, qnt_imagensnoalbum)){
         var imgDentroAlbum = document.createElement('img')
         if(cont == 0){
@@ -104,15 +82,10 @@ function albumPratica(){
     parallax.appendChild(img_album)
     corpo_album.appendChild(parallax)
     corpo_album.appendChild(imagensAlbum)
-    
-    veja.appendChild(vejaMaisAlguns)
-    maisAlbuns.appendChild(img1Index)
-    maisAlbuns.appendChild(img2Index)
-    maisAlbuns.appendChild(img3Index)
-    veja.appendChild(maisAlbuns)
-    corpo_album.appendChild(veja)
+    a.appendChild(voltarAlbum)
+    divBt.appendChild(a)
+    corpo_album.appendChild(divBt)
 }
-
 img1.addEventListener('click', () => {
     img = 1
     corpo.style.display = 'none'
