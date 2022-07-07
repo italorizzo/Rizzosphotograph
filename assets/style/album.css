@@ -47,6 +47,15 @@
 .imgAlbum img{
     display: inline-block;
     max-width: 80%;
-    max-height: 900px;
+    max-height: 800px;
     margin: 5px;
+}
+.vejaMaisAlguns{
+    text-align: center;
+    font-weight: lighter;
+    color: gray;
+}
+.maisAlbuns{
+    width: 98%;
+    margin: auto;
 }
